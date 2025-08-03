@@ -14,9 +14,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Sync Files
-        uses: SamKirkland/web-deploy@v1
+        uses: SamKirkland/web-deploy@v2
         with:
           target-server: dev.hydromet.net.au
-          remote-user: admin@hydromet.net.au
+          remote-user: admin
           private-ssh-key: ${{ secrets.SSH_KEY }}
           destination-path: /home/hydromet/dev.hydromet.net.au/wp-content/themes/my-classic-theme/
