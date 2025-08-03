@@ -1,0 +1,123 @@
+/*
+Theme Name: My Classic Theme
+
+*/
+
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"); */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
+@import url("css/owl.carousel.css");
+@import url("css/owl.theme.default.css");
+
+:root {
+  --custom-blue: #07407b;
+  --custom-orange: #f6931d;
+  --custom-text-colour: #414141;
+  --custom-font-size-small: clamp(
+    0.875rem,
+    0.875rem + ((1vw - 0.2rem) * 0.184),
+    1rem
+  );
+  --custom-font-size-medium: clamp(
+    0.875rem,
+    0.875rem + ((1vw - 0.2rem) * 0.368),
+    1.125rem
+  );
+  --custom-font-size-large: clamp(
+    1.119rem,
+    1.119rem + ((1vw - 0.2rem) * 0.928),
+    1.75rem
+  );
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  border: 10px solid blue;
+}
+header {
+  background-image: url("images/header-wire.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  justify-content: space-evenly;
+}
+
+.content {
+  display: flex;
+  gap: 5.5rem;
+}
+.quick-launch-container {
+  flex-basis: 25%;
+}
+.entry-container {
+  flex-basis: 75%;
+}
+
+#front-page-carousel.front-page-carousel .item {
+  align-items: center;
+  background-position: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  min-height: 430px;
+  padding: 1em;
+  position: relative;
+}
+#front-page-carousel.front-page-carousel .item:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+#front-page-carousel.front-page-carousel .item img {
+  border: none;
+  bottom: 0;
+  box-shadow: none;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  -o-object-fit: cover;
+  object-fit: cover;
+  outline: none;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+#front-page-carousel.front-page-carousel .carousel-content {
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+#front-page-carousel.front-page-carousel .carousel-content h1 {
+  color: #fff;
+  font-size: clamp(36px, 2.25rem + ((1vw - 7.68px) * 1.442), 48px);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+}
+#front-page-carousel.front-page-carousel .carousel-content a {
+  background-color: var(--custom-orange);
+  border-radius: 30px;
+  color: var(--custom-color--bakground);
+  font-size: var(--custom-font-size-medium);
+  line-height: inherit;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  text-decoration: none;
+}
