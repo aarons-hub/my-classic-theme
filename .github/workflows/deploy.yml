@@ -16,7 +16,7 @@ jobs:
       - name: Sync Files
         uses: SamKirkland/web-deploy@v1
         with:
-          target-server: dev.hydromet.net.au
+          target-server: hydromet.net.au
           remote-user: hydromet
           private-ssh-key: ${{ secrets.SSH_KEY }}
           destination-path: /home/hydromet/dev.hydromet.net.au/wp-content/themes/my-classic-theme/
