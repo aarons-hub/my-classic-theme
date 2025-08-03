@@ -38,7 +38,7 @@ Theme Name: My Classic Theme
 }
 
 body {
-  border: 10px solid blue;
+  border: 10px solid black;
 }
 header {
   background-image: url("images/header-wire.png");
