@@ -7,7 +7,7 @@ on:
 
 jobs:
   web-deploy:
-    name: Deploy Website Every Commit
+    name: Deploy website every commit
     runs-on: ubuntu-latest
     steps:
       - name: Get Latest Code
